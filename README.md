@@ -1,4 +1,4 @@
-# Forex Trade Analysis
+# Forex Trade Analysis Pipeline
 
 A data engineering and analytics project designed to clean, transform, and model forex trading data for performance insights.
 
