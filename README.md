@@ -16,4 +16,4 @@ A data engineering and analytics project designed to clean, transform, and model
 
 ### Data Loading Scripts
 **Python**
--**[pull_transformed_dw_data.py](https://github.com/Beegie01/Forex-Trade-Analysis-Pipeline/blob/main/pull_transformed_dw_data.py)** – Extracts analytic-ready data from data warehouse views and stores it in flat files.
+- **[pull_transformed_dw_data.py](https://github.com/Beegie01/Forex-Trade-Analysis-Pipeline/blob/main/pull_transformed_dw_data.py)** – Extracts analytic-ready data from data warehouse views and stores it in flat files.
