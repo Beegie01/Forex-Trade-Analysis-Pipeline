@@ -1,6 +1,6 @@
 # Forex Trade Analysis Pipeline
 
-A data engineering and analytics project designed to clean, transform, and model forex trading data for performance insights.
+An analytics engineering project designed to clean, transform, and model forex trading data for performance insights.
 
 ### Data Cleaning & Preparation Scripts
 **Python**
