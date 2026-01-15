@@ -12,4 +12,8 @@ A data engineering and analytics project designed to clean, transform, and model
 **SQL**
 - **[staging_ddl.sql](https://github.com/Beegie01/Forex-Trade-Analysis-Pipeline/blob/main/staging_ddl.sql)** – Defines schemas and creates staging and transformation tables.  
 - **[core_dml.sql](https://github.com/Beegie01/Forex-Trade-Analysis-Pipeline/blob/main/core_dml.sql)** – Implements transformation logic and builds core data models.  
-- **[access.sql](https://github.com/Beegie01/Forex-Trade-Analysis-Pipeline/blob/main/access.sql)** – Creates analytic-ready views for reporting, KPI calculation, and performance analysis.  
+- **[access.sql](https://github.com/Beegie01/Forex-Trade-Analysis-Pipeline/blob/main/access.sql)** – Creates analytic-ready views for reporting, KPI calculation, and performance analysis.
+
+### Data Loading Scripts
+**Python**
+-**[pull_transformed_dw_data.py](https://github.com/Beegie01/Forex-Trade-Analysis-Pipeline/blob/main/pull_transformed_dw_data.py)** – Extracts analytic-ready data from data warehouse views and stores it in flat files.
