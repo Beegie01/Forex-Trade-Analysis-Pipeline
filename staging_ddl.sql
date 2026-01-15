@@ -37,4 +37,14 @@ CREATE TABLE "staging".axi_trade_history
         ON DELETE NO ACTION
 );
 
+-- schema: core
+DROP SCHEMA IF EXISTS core CASCADE;
+
+CREATE SCHEMA core;
+
+-- schema: gold
+DROP SCHEMA IF EXISTS gold CASCADE;
+
+CREATE SCHEMA IF NOT EXISTS gold;
+
 SELECT 'OPERATION COMPLETE!!'
