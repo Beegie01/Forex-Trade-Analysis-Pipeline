@@ -14,6 +14,6 @@ A data engineering and analytics project designed to clean, transform, and model
 
 ### Data Loading Scripts
 **Python**
-- **[push_cleansed_dim_data.py](https://github.com/Beegie01/Forex-Trade-Analysis-Pipeline/blob/main/push_cleansed_dim_data.py)** – Loads cleansed dimension tables into the SQL data warehouse.  
-- **[push_cleansed_fact_data.py](https://github.com/Beegie01/Forex-Trade-Analysis-Pipeline/blob/main/push_cleansed_fact_data.py)** – Loads cleansed fact tables into the SQL data warehouse. 
+- **[push_cleansed_dim_data.py](https://github.com/Beegie01/Forex-Trade-Analysis-Pipeline/blob/main/push_cleansed_dim_data.py)** – Extracts and loads dimension data from flat files into SQL data warehouse staging tables.
+- **[push_cleansed_fact_data.py](https://github.com/Beegie01/Forex-Trade-Analysis-Pipeline/blob/main/push_cleansed_fact_data.py)** – Extracts and loads fact data from flat files into SQL data warehouse staging tables.
 - **[pull_transformed_dw_data.py](https://github.com/Beegie01/Forex-Trade-Analysis-Pipeline/blob/main/pull_transformed_dw_data.py)** – Extracts analytic-ready data from data warehouse views and stores it in flat files.
