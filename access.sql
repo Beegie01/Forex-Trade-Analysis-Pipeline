@@ -1,13 +1,8 @@
--- schema: public
-DROP SCHEMA IF EXISTS public CASCADE;
+-- View: gold.trade_history
 
-CREATE SCHEMA IF NOT EXISTS public;
+-- DROP VIEW gold.trade_history;
 
--- View: public.trade_history
-
--- DROP VIEW public.trade_history;
-
-CREATE OR REPLACE VIEW public.trade_history
+CREATE OR REPLACE VIEW gold.trade_history
  AS
  SELECT account_nr,
     ticket,
@@ -41,14 +36,14 @@ CREATE OR REPLACE VIEW public.trade_history
     overnight_trade
    FROM core.trade_history;
 
-ALTER TABLE public.trade_history
+ALTER TABLE gold.trade_history
     OWNER TO postgres;
 
--- View: public.dim_account_info
+-- View: gold.dim_account_info
 
--- DROP VIEW public.dim_account_info;
+-- DROP VIEW gold.dim_account_info;
 
-CREATE OR REPLACE VIEW public.dim_account_info
+CREATE OR REPLACE VIEW gold.dim_account_info
  AS
  SELECT account_number,
     account_name,
@@ -56,14 +51,14 @@ CREATE OR REPLACE VIEW public.dim_account_info
     currency_name
    FROM core.dim_account_info;
 
-ALTER TABLE public.dim_account_info
+ALTER TABLE gold.dim_account_info
     OWNER TO postgres;
 
--- View: public.dim_date
+-- View: gold.dim_date
 
--- DROP VIEW public.dim_date;
+-- DROP VIEW gold.dim_date;
 
-CREATE OR REPLACE VIEW public.dim_date
+CREATE OR REPLACE VIEW gold.dim_date
  AS
  SELECT cal_date,
     date_key,
@@ -85,14 +80,14 @@ CREATE OR REPLACE VIEW public.dim_date
     is_business_day
    FROM core.dim_date;
 
-ALTER TABLE public.dim_date
+ALTER TABLE gold.dim_date
     OWNER TO postgres;
 
--- View: public.dim_clock
+-- View: gold.dim_clock
 
--- DROP VIEW public.dim_clock;
+-- DROP VIEW gold.dim_clock;
 
-CREATE OR REPLACE VIEW public.dim_clock
+CREATE OR REPLACE VIEW gold.dim_clock
  AS
  SELECT clock,
     clock_hour,
@@ -104,7 +99,7 @@ CREATE OR REPLACE VIEW public.dim_clock
     part_of_day_num
    FROM core.dim_clock;
 
-ALTER TABLE public.dim_clock
+ALTER TABLE gold.dim_clock
     OWNER TO postgres;
 
 SELECT 'OPERATION COMPLETE!!'
