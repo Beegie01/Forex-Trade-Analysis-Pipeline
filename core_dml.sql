@@ -1,8 +1,3 @@
--- schema: core
-DROP SCHEMA IF EXISTS core CASCADE;
-
-CREATE SCHEMA core;
-
 -- View: core.trade_hist_info
 
 -- DROP MATERIALIZED VIEW IF EXISTS core.trade_hist_info;
